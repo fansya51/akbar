@@ -1,0 +1,141 @@
+:root {
+    --primary-bg: #F8F9FA;
+    --accent-color: #0D3827;
+    --text-color: #333333;
+    --light-accent: rgba(13, 56, 39, 0.1);
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--primary-bg);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+.about-header {
+    background-color: white;
+    padding: 60px 0;
+    text-align: center;
+    border-bottom: 1px solid #eee;
+}
+
+.company-logo {
+    max-width: 220px;
+    margin-bottom: 30px;
+}
+
+.section-title {
+    color: var(--accent-color);
+    font-weight: 600;
+    margin-bottom: 25px;
+    position: relative;
+    display: inline-block;
+}
+
+.section-title:after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 25%;
+    width: 50%;
+    height: 3px;
+    background-color: var(--accent-color);
+}
+
+.about-content {
+    padding: 60px 0;
+}
+
+.mission-vision {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    padding: 30px;
+    margin-bottom: 30px;
+    height: 100%;
+}
+
+.mission-vision i {
+    color: var(--accent-color);
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+.feature-box {
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s;
+}
+
+.feature-box:hover {
+    transform: translateY(-5px);
+}
+
+.feature-icon {
+    width: 60px;
+    height: 60px;
+    background-color: var(--light-accent);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.feature-icon i {
+    color: var(--accent-color);
+    font-size: 24px;
+}
+
+.team-member {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.team-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 15px;
+}
+
+.social-icons a {
+    color: var(--accent-color);
+    margin: 0 8px;
+    transition: opacity 0.3s;
+}
+
+.social-icons a:hover {
+    opacity: 0.8;
+}
+
+.accent-btn {
+    background-color: var(--accent-color);
+    color: white;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 4px;
+    transition: opacity 0.3s;
+}
+
+.accent-btn:hover {
+    opacity: 0.9;
+    color: white;
+}
+
+.values-section {
+    background-color: var(--light-accent);
+    padding: 60px 0;
+}
+
+.blockquote {
+    font-style: italic;
+    border-left: 4px solid var(--accent-color);
+    padding-left: 20px;
+}

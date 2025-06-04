@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sketdoor</title>
+    <link rel="icon" href="../src/icon/icon-bg.png" />
+    <link rel="stylesheet" href="../css/global.css" />
+    <link rel="stylesheet" href="../css/help.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <script src="../js/pageLayout.js" defer></script>
+    <script src="../src/data/product.js"></script>
+
+    <main>
+        <header class="help-header">
+            <div class="container">
+                <h1 class="section-title">Help Center</h1>
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <p class="lead mb-4">
+                            Find answers to frequently asked questions and get support for your Sketdoor products.
+                        </p>
+                        
+                        <div class="search-container">
+                            <div class="input-group">
+                                <input type="text" class="form-control search-input" placeholder="Search for help topics..." aria-label="Search">
+                                <button class="btn search-btn" type="button">
+                                    <i class="fas fa-search"></i> Search
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+    
+        <!-- Help Categories -->
+        <section class="container py-5 help-categories">
+            <div class="row">
+                <div class="col-md-3 col-sm-6 mb-4">
+                    <div class="category-card" onclick="document.getElementById('orderSection').scrollIntoView({behavior: 'smooth'});">
+                        <div class="category-icon">
+                            <i class="fas fa-shopping-cart"></i>
+                        </div>
+                        <h4>Orders &amp; Shipping</h4>
+                        <p>Track orders, shipping info and returns</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 mb-4">
+                    <div class="category-card" onclick="document.getElementById('productSection').scrollIntoView({behavior: 'smooth'});">
+                        <div class="category-icon">
+                            <i class="fas fa-hiking"></i>
+                        </div>
+                        <h4>Products</h4>
+                        <p>Product usage, care and specifications</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 mb-4">
+                    <div class="category-card" onclick="document.getElementById('accountSection').scrollIntoView({behavior: 'smooth'});">
+                        <div class="category-icon">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <h4>Account &amp; Payment</h4>
+                        <p>Login issues, payment methods</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 mb-4">
+                    <div class="category-card" onclick="document.getElementById('warrantySection').scrollIntoView({behavior: 'smooth'});">
+                        <div class="category-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <h4>Warranty &amp; Returns</h4>
+                        <p>Return policy and warranty claims</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+        <!-- FAQ Section -->
+        <section class="faq-section" id="faqSection">
+            <div class="container">
+                <h2 class="text-center mb-5">Frequently Asked Questions</h2>
+                
+                <!-- Orders Section -->
+                <div id="orderSection" class="mb-5">
+                    <h3 class="category-title">Orders &amp; Shipping</h3>
+                    <div class="accordion" id="orderAccordion">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="order1">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOrder1" aria-expanded="true" aria-controls="collapseOrder1">
+                                    How can I track my order?
+                                </button>
+                            </h2>
+                            <div id="collapseOrder1" class="accordion-collapse collapse show" aria-labelledby="order1" data-bs-parent="#orderAccordion">
+                                <div class="accordion-body">
+                                    You can track your order by logging into your account and viewing your order history. Alternatively, you can use the tracking number provided in your shipping confirmation email. All orders are dispatched with a tracking number that allows you to monitor your package's journey from our warehouse to your doorstep.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="order2">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOrder2" aria-expanded="false" aria-controls="collapseOrder2">
+                                    How long does shipping take?
+                                </button>
+                            </h2>
+                            <div id="collapseOrder2" class="accordion-collapse collapse" aria-labelledby="order2" data-bs-parent="#orderAccordion">
+                                <div class="accordion-body">
+                                    Standard shipping typically takes 3-5 business days within the continental US. Expedited shipping options are available at checkout for 1-2 business day delivery. International shipping times vary by location, generally taking 7-14 business days. Please note that customs clearance may cause additional delays for international orders.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="order3">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOrder3" aria-expanded="false" aria-controls="collapseOrder3">
+                                    Do you ship internationally?
+                                </button>
+                            </h2>
+                            <div id="collapseOrder3" class="accordion-collapse collapse" aria-labelledby="order3" data-bs-parent="#orderAccordion">
+                                <div class="accordion-body">
+                                    Yes, we ship to most countries worldwide. International shipping rates and delivery times vary by destination. Please note that customers are responsible for any customs fees, import taxes, or duties that may be incurred. These charges are not included in our shipping fees and will be collected by the delivery service or customs office in your country.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Products Section -->
+                <div id="productSection" class="mb-5">
+                    <h3 class="category-title">Products</h3>
+                    <div class="accordion" id="productAccordion">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="product1">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseProduct1" aria-expanded="true" aria-controls="collapseProduct1">
+                                    How do I choose the right hiking boots?
+                                </button>
+                            </h2>
+                            <div id="collapseProduct1" class="accordion-collapse collapse show" aria-labelledby="product1" data-bs-parent="#productAccordion">
+                                <div class="accordion-body">
+                                    Choosing the right hiking boots depends on several factors: the type of terrain you'll be hiking on, the duration of your hikes, weather conditions, and your personal comfort preferences. For light day hikes on well-maintained trails, trail runners or light hiking shoes may be sufficient. For more challenging terrain or multi-day hikes with a heavy pack, mid to high-cut boots with good ankle support are recommended. Our product descriptions include detailed recommendations for each boot's intended use.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="product2">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseProduct2" aria-expanded="false" aria-controls="collapseProduct2">
+                                    How should I care for my waterproof gear?
+                                </button>
+                            </h2>
+                            <div id="collapseProduct2" class="accordion-collapse collapse" aria-labelledby="product2" data-bs-parent="#productAccordion">
+                                <div class="accordion-body">
+                                    To maintain the waterproof properties of your gear, regular cleaning and proper care are essential. For waterproof jackets and pants, wash them according to the care instructions (typically gentle cycle with technical wash detergent). Avoid fabric softeners as they can damage the waterproof membrane. After washing, reactivate the DWR (Durable Water Repellent) coating by tumble drying on low heat or using a specialized reproofing spray. For waterproof footwear, clean mud and dirt after each use, and periodically treat with a waterproofing product designed for the specific material of your boots.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="product3">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseProduct3" aria-expanded="false" aria-controls="collapseProduct3">
+                                    What capacity backpack do I need for different trips?
+                                </button>
+                            </h2>
+                            <div id="collapseProduct3" class="accordion-collapse collapse" aria-labelledby="product3" data-bs-parent="#productAccordion">
+                                <div class="accordion-body">
+                                    <p>Backpack capacity recommendations based on trip duration:</p>
+                                    <ul>
+                                        <li><strong>Day hikes:</strong> 15-30 liters - Enough for water, snacks, rain gear, first aid, and a few personal items</li>
+                                        <li><strong>1-3 night trips:</strong> 30-50 liters - Room for sleeping bag, small tent, cooking equipment, clothes, and food</li>
+                                        <li><strong>3-5 night trips:</strong> 50-70 liters - Additional capacity for more food, clothes, and possibly more rugged gear</li>
+                                        <li><strong>Extended trips (5+ nights):</strong> 70+ liters - Space for additional supplies, food, and potentially specialized equipment</li>
+                                    </ul>
+                                    <p>Remember that your individual gear choices, season of travel, and personal packing style may affect the ideal capacity for your needs.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Account Section -->
+                <div id="accountSection" class="mb-5">
+                    <h3 class="category-title">Account &amp; Payment</h3>
+                    <div class="accordion" id="accountAccordion">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="account1">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseAccount1" aria-expanded="true" aria-controls="collapseAccount1">
+                                    How do I reset my password?
+                                </button>
+                            </h2>
+                            <div id="collapseAccount1" class="accordion-collapse collapse show" aria-labelledby="account1" data-bs-parent="#accountAccordion">
+                                <div class="accordion-body">
+                                    To reset your password, click on the "Login" button at the top of our website, then select "Forgot Password". Enter the email address associated with your account, and we'll send you a password reset link. If you don't receive the email within a few minutes, please check your spam folder. The reset link is valid for 24 hours. If you continue to experience issues, please contact our customer support team.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="account2">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseAccount2" aria-expanded="false" aria-controls="collapseAccount2">
+                                    What payment methods do you accept?
+                                </button>
+                            </h2>
+                            <div id="collapseAccount2" class="accordion-collapse collapse" aria-labelledby="account2" data-bs-parent="#accountAccordion">
+                                <div class="accordion-body">
+                                    We accept a variety of payment methods to make your shopping experience convenient:
+                                    <ul>
+                                        <li>Credit/Debit Cards (Visa, MasterCard, American Express, Discover)</li>
+                                        <li>PayPal</li>
+                                        <li>Apple Pay</li>
+                                        <li>Google Pay</li>
+                                        <li>Shop Pay</li>
+                                        <li>Klarna (Buy Now, Pay Later)</li>
+                                        <li>Gift Cards</li>
+                                    </ul>
+                                    All payment information is securely processed and encrypted to ensure your data remains protected.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="account3">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseAccount3" aria-expanded="false" aria-controls="collapseAccount3">
+                                    How do I update my shipping address?
+                                </button>
+                            </h2>
+                            <div id="collapseAccount3" class="accordion-collapse collapse" aria-labelledby="account3" data-bs-parent="#accountAccordion">
+                                <div class="accordion-body">
+                                    You can update your shipping address by logging into your account and navigating to "Account Settings" or "Address Book". From there, you can edit your existing addresses or add new ones. If you need to change the shipping address for an order that has already been placed but not yet shipped, please contact our customer service team immediately with your order number. We'll do our best to update the shipping information if the order hasn't been processed yet.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Warranty Section -->
+                <div id="warrantySection">
+                    <h3 class="category-title">Warranty &amp; Returns</h3>
+                    <div class="accordion" id="warrantyAccordion">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="warranty1">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWarranty1" aria-expanded="true" aria-controls="collapseWarranty1">
+                                    What is your return policy?
+                                </button>
+                            </h2>
+                            <div id="collapseWarranty1" class="accordion-collapse collapse show" aria-labelledby="warranty1" data-bs-parent="#warrantyAccordion">
+                                <div class="accordion-body">
+                                    We offer a 30-day satisfaction guarantee on unused items in original condition with all tags and packaging. To initiate a return, log into your account and select the order containing the item(s) you wish to return. Follow the prompts to generate a return shipping label. Return shipping is free for exchanges, and a flat fee of $7.95 for returns. Once we receive your return, please allow 5-7 business days for processing. Refunds will be issued to your original payment method.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="warranty2">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWarranty2" aria-expanded="false" aria-controls="collapseWarranty2">
+                                    How do I make a warranty claim?
+                                </button>
+                            </h2>
+                            <div id="collapseWarranty2" class="accordion-collapse collapse" aria-labelledby="warranty2" data-bs-parent="#warrantyAccordion">
+                                <div class="accordion-body">
+                                    To submit a warranty claim, please visit our Warranty Claim page and complete the form with your order information, product details, and a description of the defect or issue. Please include clear photos showing the problem. Our warranty team will review your claim within 3-5 business days and contact you with next steps. Most products carry a 1-year warranty against manufacturing defects. High-end equipment and select brands may offer extended warranties of up to 3 years or lifetime guarantees, as specified in the product description.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="warranty3">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWarranty3" aria-expanded="false" aria-controls="collapseWarranty3">
+                                    Are sale items eligible for return?
+                                </button>
+                            </h2>
+                            <div id="collapseWarranty3" class="accordion-collapse collapse" aria-labelledby="warranty3" data-bs-parent="#warrantyAccordion">
+                                <div class="accordion-body">
+                                    Yes, most sale items are eligible for returns within 30 days, but special markdown items marked as "Final Sale" cannot be returned unless defective. Clearance items are eligible for exchange or store credit only. Please check the product page for any specific return restrictions before purchasing. If you're uncertain about an item's return eligibility, please contact our customer service team for clarification before making your purchase.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+        <!-- Contact Support Section -->
+        <section class="contact-section">
+            <div class="container">
+                <div class="contact-box">
+                    <h3 class="mb-4">Still need help?</h3>
+                    <p class="mb-4">Our customer support team is available to assist you with any questions or concerns.</p>
+                    
+                    <div class="row justify-content-center">
+                        <div class="col-md-4 contact-method">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <h5>Email Support</h5>
+                            <p>Get a response within 24 hours</p>
+                            <a href="mailto:Sketdoorcs@gmail.com" class="btn btn-accent">Send Email</a>
+                        </div>
+                        <div class="col-md-4 contact-method">
+                            <div class="contact-icon">
+                                <i class="fa-brands fa-whatsapp"></i>
+                            </div>
+                            <h5>WhatsApp</h5>
+                            <p>Available 9am-6pm EST, Mon-Fri</p>
+                            <a target="_blank" href="http://wa.me/62895366877759" class="btn btn-accent">Start Chat</a>
+                        </div>
+                        <div class="col-md-4 contact-method">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone-alt"></i>
+                            </div>
+                            <h5>Phone Support</h5>
+                            <p>Call us at 62895366877759</p>
+                            <a href="tel:62895366877759" class="btn btn-accent">Call Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+        <!-- Bootstrap JS Bundle with Popper -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+        
+        <script>
+            // Simple search functionality
+            document.querySelector('.search-btn').addEventListener('click', function() {
+                performSearch();
+            });
+            
+            document.querySelector('.search-input').addEventListener('keypress', function(e) {
+                if (e.key === 'Enter') {
+                    performSearch();
+                }
+            });
+            
+            function performSearch() {
+                const searchTerm = document.querySelector('.search-input').value.toLowerCase();
+                
+                if (searchTerm.length < 2) {
+                    alert('Please enter at least 2 characters to search');
+                    return;
+                }
+                
+                const accordionButtons = document.querySelectorAll('.accordion-button');
+                let found = false;
+                
+                // Reset all highlights and collapse all items
+                document.querySelectorAll('.accordion-collapse').forEach(function(item) {
+                    item.classList.remove('show');
+                });
+                
+                accordionButtons.forEach(function(button) {
+                    button.classList.add('collapsed');
+                    const text = button.textContent.toLowerCase();
+                    
+                    if (text.includes(searchTerm)) {
+                        // Open this accordion item
+                        const target = button.getAttribute('data-bs-target');
+                        document.querySelector(target).classList.add('show');
+                        button.classList.remove('collapsed');
+                        
+                        // Scroll to it
+                        setTimeout(() => {
+                            button.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                        }, 300);
+                        
+                        found = true;
+                    }
+                });
+                
+                // Also search in accordion body content
+                if (!found) {
+                    const accordionBodies = document.querySelectorAll('.accordion-body');
+                    
+                    accordionBodies.forEach(function(body) {
+                        const text = body.textContent.toLowerCase();
+                        
+                        if (text.includes(searchTerm)) {
+                            // Open this accordion item
+                            const collapseElement = body.closest('.accordion-collapse');
+                            collapseElement.classList.add('show');
+                            
+                            // Find and update the button
+                            const id = collapseElement.getAttribute('id');
+                            const button = document.querySelector(`[data-bs-target="#${id}"]`);
+                            button.classList.remove('collapsed');
+                            
+                            // Scroll to it
+                            setTimeout(() => {
+                                body.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                            }, 300);
+                            
+                            found = true;
+                        }
+                    });
+                }
+                
+                if (!found) {
+                    alert('No results found for "' + searchTerm + '". Please try different keywords.');
+                }
+            }
+        </script>
+    </main>
+
+    <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+    crossorigin="anonymous"
+  ></script>
+</body>
+</html>

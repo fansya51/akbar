@@ -1,0 +1,217 @@
+:root {
+    --primary-bg: #F8F9FA;
+    --accent-color: #0D3827;
+    --text-color: #333333;
+    --light-accent: rgba(13, 56, 39, 0.1);
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--primary-bg);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+.help-header {
+    background-color: white;
+    padding: 60px 0 40px;
+    text-align: center;
+    border-bottom: 1px solid #eee;
+}
+
+.company-logo {
+    max-width: 180px;
+    margin-bottom: 20px;
+}
+
+.section-title {
+    color: var(--accent-color);
+    font-weight: 600;
+    margin-bottom: 25px;
+    position: relative;
+    display: inline-block;
+}
+
+.section-title:after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 25%;
+    width: 50%;
+    height: 3px;
+    background-color: var(--accent-color);
+}
+
+.search-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px 0 0;
+}
+
+.search-input {
+    border: 2px solid #ddd;
+    border-radius: 50px;
+    padding: 15px 25px;
+    font-size: 16px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s;
+}
+
+.search-input:focus {
+    border-color: var(--accent-color);
+    box-shadow: 0 2px 15px rgba(13, 56, 39, 0.15);
+}
+
+.search-btn {
+    background-color: var(--accent-color);
+    color: white;
+    border: none;
+    border-radius: 50px;
+    padding: 10px 25px;
+    transition: opacity 0.3s;
+}
+
+.search-btn:hover {
+    opacity: 0.9;
+}
+
+.faq-section {
+    padding: 60px 0;
+}
+
+.category-title {
+    margin-bottom: 20px;
+    color: var(--accent-color);
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.accordion-item {
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.accordion-button {
+    background-color: white;
+    font-weight: 500;
+    padding: 15px 20px;
+    color: var(--text-color);
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: var(--light-accent);
+    color: var(--accent-color);
+    box-shadow: none;
+}
+
+.accordion-button:focus {
+    box-shadow: none;
+    border-color: rgba(13, 56, 39, 0.25);
+}
+
+.accordion-button::after {
+    background-size: 16px;
+    width: 16px;
+    height: 16px;
+}
+
+.accordion-body {
+    padding: 20px;
+    background-color: white;
+}
+
+.help-categories {
+    margin-bottom: 40px;
+}
+
+.category-card {
+    padding: 25px 20px;
+    text-align: center;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s, box-shadow 0.3s;
+    height: 100%;
+    cursor: pointer;
+}
+
+.category-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.category-icon {
+    font-size: 32px;
+    color: var(--accent-color);
+    margin-bottom: 15px;
+}
+
+.category-card h4 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.contact-section {
+    background-color: var(--light-accent);
+    padding: 50px 0;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.contact-box {
+    background-color: white;
+    border-radius: 8px;
+    padding: 30px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.contact-method {
+    display: inline-block;
+    margin: 0 20px;
+    padding: 15px;
+}
+
+.contact-icon {
+    font-size: 24px;
+    color: var(--accent-color);
+    margin-bottom: 10px;
+}
+
+.btn-accent {
+    background-color: var(--accent-color);
+    color: white;
+    border: none;
+    padding: 8px 20px;
+    border-radius: 4px;
+    transition: opacity 0.3s;
+}
+
+.btn-accent:hover {
+    opacity: 0.9;
+    color: white;
+}
+
+.help-list {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.help-list li {
+    padding: 5px 0;
+}
+
+.help-list a {
+    color: var(--accent-color);
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.help-list a:hover {
+    color: #0a2a1d;
+    text-decoration: underline;
+}

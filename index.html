@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sketdoor</title>
+    <link rel="icon" href="src/icon/icon-bg.png" />
+    <link rel="stylesheet" href="css/global.css" />
+    <link rel="stylesheet" href="css/index.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+
+  <script src="js/layout.js" defer></script>
+    <main>
+      <div id="carouselExampleIndicators" class="carousel slide">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="src/carousel/carousel1.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="src/carousel/carousel2.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="src/carousel/carousel3.jpg" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+  
+      <div class="container-fluid py-4" id="category">
+        <div class="categories-row">
+            <!-- Card 1 -->
+            <div class="category-item" onclick="location.href='4-Jawi Arung Samudra/apparel.html'">
+                <div class="category-card">
+                    <img src="src/img/category/apparel.png" alt="Apparel">
+                    <div class="category-overlay">Apparel</div>
+                </div>
+            </div>
+            
+            <!-- Card 2 -->
+            <div class="category-item">
+                <div class="category-card" onclick="location.href='4-Jawi Arung Samudra/Footwear.html'">
+                    <img src="src/img/category/footwear.jpg" alt="Footwear">
+                    <div class="category-overlay">Footwear</div>
+                </div>
+            </div>
+            
+            <!-- Card 3 -->
+            <div class="category-item">
+                <div class="category-card">
+                    <img src="src/img/category/equipment.jpg" alt="Equipment" onclick="location.href='4-Jawi Arung Samudra/Equipment.html'">
+                    <div class="category-overlay">Equipment</div>
+                </div>
+            </div>
+            
+            <!-- Card 4 -->
+            <div class="category-item">
+                <div class="category-card">
+                    <img src="src/img/category/cooking.jpeg" alt="Cooking" onclick="location.href='4-Jawi Arung Samudra/Cooking.html'">
+                    <div class="category-overlay">Cooking</div>
+                </div>
+            </div>
+            
+            <!-- Card 5 -->
+            <div class="category-item">
+                <div class="category-card">
+                    <img src="src/img/category/navigation.jpg" alt="Navigation" onclick="location.href='4-Jawi Arung Samudra/Navigation.html'">
+                    <div class="category-overlay">Navigation</div>
+                </div>
+            </div>
+            
+            <!-- Card 6 -->
+            <div class="category-item">
+                <div class="category-card">
+                    <img src="src/img/category/backpack.jpg" alt="Backpack" onclick="location.href='4-Jawi Arung Samudra/Backpack.html'">
+                    <div class="category-overlay">Backpack</div>
+                </div>
+            </div>
+            
+            <!-- Card 7 -->
+            <div class="category-item">
+                <div class="category-card">
+                    <img src="src/img/category/accessories.jpg" alt="Accessories" onclick="location.href='4-Jawi Arung Samudra/Accessories.html'">
+                    <div class="category-overlay">Accessories</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container mt-5">
+      <!-- Newest Products Section -->
+      <div class="product-section">
+          <h3 class="section-title" style="display: flex; justify-content: space-between; align-items: end;">Newest Products <button class="btn btn-link" style="color: #0D3827; text-decoration: none;"  onclick="location.href='2-Moch Akbar Irfansyah/product.html'">More Item</button></h3>
+          <div class="products-row" id="newest-products">
+              <!-- Product cards will be inserted here by JS -->
+          </div>
+      </div>
+      
+      <!-- Hot Products (By Price) Section -->
+      <div class="product-section">
+          <h3 class="section-title" style="display: flex; justify-content: space-between; align-items: end;">Hot Products <button class="btn btn-link" style="color: #0D3827; text-decoration: none;" onclick="location.href='2-Moch Akbar Irfansyah/product.html'">More Item</button></h3>
+          <div class="products-row" id="hot-products">
+              <!-- Product cards will be inserted here by JS -->
+          </div>
+      </div>
+      
+      <!-- Recommended Products (Random) Section -->
+      <div class="product-section">
+          <h3 class="section-title" style="display: flex; justify-content: space-between; align-items: end;">Recommended For You <button class="btn btn-link" style="color: #0D3827; text-decoration: none;"  onclick="location.href='2-Moch Akbar Irfansyah/product.html'">More Item</button></h3>
+          <div class="products-row" id="recommended-products">
+              <!-- Product cards will be inserted here by JS -->
+          </div>
+      </div>
+  </div>
+
+  <!-- Bootstrap JS Bundle with Popper -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+
+  <script src="src/data/product.js"></script>
+  <script>
+      // Function to create a product card HTML
+      function createProductCard(product) {
+          return `
+              <div class="product-card" onclick="location.href='${product.detail}'">
+                  <div class="product-image">
+                      <img src="${product.image}" alt="${product.name}">
+                      ${product.isNew ? '<div class="product-badge">New</div>' : ''}
+                  </div>
+                  <div class="product-details">
+                      <h5 class="product-title">${product.name}</h5>
+                      <div class="product-category">${product.category}</div>
+                      <div class="product-price">
+                          <span class="price">Rp ${product.price.toLocaleString('id-ID', { minimumFractionDigits: 2 })}</span>
+                      </div>
+                  </div>
+              </div>
+          `;
+      }
+      
+      // No longer need the generateStars function
+      
+      // Function to render products
+      function renderProducts() {
+          // Sort products by date (newest first)
+          const newestProducts = [...products].sort((a, b) => b.date - a.date).slice(0, 7);
+          
+          // Sort products by price (highest discount first)
+          const hotProducts = [...products]
+              .sort((a, b) => (b.originalPrice - b.price) / b.originalPrice - (a.originalPrice - a.price) / a.originalPrice)
+              .slice(0, 7);
+          
+          // Get random products for recommendations
+          const shuffledProducts = [...products].sort(() => 0.5 - Math.random());
+          const recommendedProducts = shuffledProducts.slice(0, 7);
+          
+          // Render newest products
+          const newestContainer = document.getElementById('newest-products');
+          newestContainer.innerHTML = newestProducts.map(product => createProductCard(product)).join('');
+          
+          // Render hot products
+          const hotContainer = document.getElementById('hot-products');
+          hotContainer.innerHTML = hotProducts.map(product => createProductCard(product)).join('');
+          
+          // Render recommended products
+          const recommendedContainer = document.getElementById('recommended-products');
+          recommendedContainer.innerHTML = recommendedProducts.map(product => createProductCard(product)).join('');
+      }
+      
+      // Initialize on page load
+      document.addEventListener('DOMContentLoaded', renderProducts);
+  </script>
+    </main>
+    
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

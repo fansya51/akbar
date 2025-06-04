@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sketdoor</title>
+    <link rel="icon" href="src/icon/icon-bg.png" />
+    <link rel="stylesheet" href="css/global.css" />
+    <link rel="stylesheet" href="css/about.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <script src="js/layout.js" defer></script>
+    <script src="src/data/product.js"></script>
+
+    <main>
+      <header class="about-header">
+        <div class="container">
+          <img
+            src="src/icon/icon.png"
+            alt="Sketdoor Logo"
+            class="company-logo"
+          />
+          <br />
+          <!-- <h1 class="section-title">About Sketdoor</h1> -->
+          <div class="row justify-content-center">
+            <div class="col-lg-8">
+              <p class="lead">
+                Sketdoor is a premier e-commerce destination for hiking
+                enthusiasts, offering top-quality gear and equipment to elevate
+                your outdoor adventures.
+              </p>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <!-- About Content -->
+      <section class="about-content">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 offset-lg-2 mb-5">
+              <p>
+                Founded in 2025 by a group of passionate hikers and outdoor
+                enthusiasts, Sketdoor has grown from a small local business to
+                become one of the leading online retailers of hiking and outdoor
+                equipment. Our mission is to provide high-quality, reliable gear
+                that enhances your connection with nature while ensuring your
+                safety and comfort.
+              </p>
+              <p>
+                At Sketdoor, we understand that the right equipment can make the
+                difference between an average hike and an extraordinary
+                adventure. That's why we carefully select each product in our
+                inventory, partnering with trusted brands and manufacturers who
+                share our commitment to quality, durability, and environmental
+                responsibility.
+              </p>
+              <p>
+                What truly sets us apart is our team's extensive experience and
+                firsthand knowledge of hiking and outdoor activities. Every item
+                we sell has been tested and approved by our experts, ensuring
+                that we only offer products we would use ourselves. This
+                dedication to excellence has earned us the trust and loyalty of
+                outdoor enthusiasts across the country.
+              </p>
+            </div>
+          </div>
+
+            <!-- Team Section -->
+                  <div class="col-12 text-center mb-5">
+                    <h2
+                      class="section-title"
+                      style="color: var(--accent-color)"
+                    >
+                      Meet Our Team
+                    </h2>
+                    <p class="lead" style="color: var(--text-color)">
+                      Our passionate team of outdoor enthusiasts and experts
+                      dedicated to your adventure
+                    </p>
+                  </div>
+
+                <div class="row g-4 mb-5">
+                  <!-- Team Member 1 -->
+                  <div class="col-lg-4 col-md-6">
+                    <div
+                      class="team-card h-100"
+                      style="
+                        background: white;
+                        border-radius: 12px;
+                        box-shadow: 0 4px 15px rgba(13, 56, 39, 0.1);
+                        transition: all 0.3s ease;
+                        overflow: hidden;
+                      "
+                    >
+                      <div
+                        class="team-image"
+                        style="
+                          height: 250px;
+                          background: linear-gradient(
+                            135deg,
+                            var(--light-accent),
+                            rgba(13, 56, 39, 0.05)
+                          );
+                          position: relative;
+                          overflow: hidden;
+                        "
+                      >
+                        <div
+                          style="
+                            position: absolute;
+                            top: 50%;
+                            left: 50%;
+                            transform: translate(-50%, -50%);
+                            width: 120px;
+                            height: 120px;
+                            background: var(--accent-color);
+                            border-radius: 50%;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                          "
+                        >
+                          <img src="src/foto-anggota/1.jpg" alt="Nama" style="width: 100%; height: 100%; object-fit: cover; border-radius: 50%;">
+                        </div>
+                      </div>
+                      <div class="team-info p-4 text-center">
+                        <h4
+                          style="
+                            color: var(--accent-color);
+                            margin-bottom: 8px;
+                            font-weight: 600;
+                          "
+                        >
+                         Dzaidan Rizky Alifian Akbar
+                        </h4>
+                        <p
+                          style="
+                            color: #666;
+                            font-size: 14px;
+                            margin-bottom: 12px;
+                            font-weight: 500;
+                          "
+                        >
+                          Absen
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Team Member 2 -->
+                  <div class="col-lg-4 col-md-6">
+                    <div
+                      class="team-card h-100"
+                      style="
+                        background: white;
+                        border-radius: 12px;
+                        box-shadow: 0 4px 15px rgba(13, 56, 39, 0.1);
+                        transition: all 0.3s ease;
+                        overflow: hidden;
+                      "
+                    >
+                      <div
+                        class="team-image"
+                        style="
+                          height: 250px;
+                          background: linear-gradient(
+                            135deg,
+                            var(--light-accent),
+                            rgba(13, 56, 39, 0.05)
+                          );
+                          position: relative;
+                          overflow: hidden;
+                        "
+                      >
+                        <div
+                          style="
+                            position: absolute;
+                            top: 50%;
+                            left: 50%;
+                            transform: translate(-50%, -50%);
+                            width: 120px;
+                            height: 120px;
+                            background: var(--accent-color);
+                            border-radius: 50%;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                          "
+                        >
+                          <img src="src/foto-anggota/2.jpg" alt="Nama" style="width: 100%; height: 100%; object-fit: cover; border-radius: 50%;">
+                        </div>
+                      </div>
+                      <div class="team-info p-4 text-center">
+                        <h4
+                          style="
+                            color: var(--accent-color);
+                            margin-bottom: 8px;
+                            font-weight: 600;
+                          "
+                        >
+                          Moch Akbar Irfansyah
+                        </h4>
+                        <p
+                          style="
+                            color: #666;
+                            font-size: 14px;
+                            margin-bottom: 12px;
+                            font-weight: 500;
+                          "
+                        >
+                         21
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Team Member 3 -->
+                  <div class="col-lg-4 col-md-6">
+                    <div
+                      class="team-card h-100"
+                      style="
+                        background: white;
+                        border-radius: 12px;
+                        box-shadow: 0 4px 15px rgba(13, 56, 39, 0.1);
+                        transition: all 0.3s ease;
+                        overflow: hidden;
+                      "
+                    >
+                      <div
+                        class="team-image"
+                        style="
+                          height: 250px;
+                          background: linear-gradient(
+                            135deg,
+                            var(--light-accent),
+                            rgba(13, 56, 39, 0.05)
+                          );
+                          position: relative;
+                          overflow: hidden;
+                        "
+                      >
+                        <div
+                          style="
+                            position: absolute;
+                            top: 50%;
+                            left: 50%;
+                            transform: translate(-50%, -50%);
+                            width: 120px;
+                            height: 120px;
+                            background: var(--accent-color);
+                            border-radius: 50%;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                          "
+                        >
+                          <img src="src/foto-anggota/3.jpg" alt="Nama" style="width: 100%; height: 100%; object-fit: cover; border-radius: 50%;">
+                        </div>
+                      </div>
+                      <div class="team-info p-4 text-center">
+                        <h4
+                          style="
+                            color: var(--accent-color);
+                            margin-bottom: 8px;
+                            font-weight: 600;
+                          "
+                        >
+                          Shynde Aditya Maulana
+                        </h4>
+                        <p
+                          style="
+                            color: #666;
+                            font-size: 14px;
+                            margin-bottom: 12px;
+                            font-weight: 500;
+                          "
+                        >
+                          Absen
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Team Member 4 -->
+                  <div class="col-lg-4 col-md-6">
+                    <div
+                      class="team-card h-100"
+                      style="
+                        background: white;
+                        border-radius: 12px;
+                        box-shadow: 0 4px 15px rgba(13, 56, 39, 0.1);
+                        transition: all 0.3s ease;
+                        overflow: hidden;
+                      "
+                    >
+                      <div
+                        class="team-image"
+                        style="
+                          height: 250px;
+                          background: linear-gradient(
+                            135deg,
+                            var(--light-accent),
+                            rgba(13, 56, 39, 0.05)
+                          );
+                          position: relative;
+                          overflow: hidden;
+                        "
+                      >
+                        <div
+                          style="
+                            position: absolute;
+                            top: 50%;
+                            left: 50%;
+                            transform: translate(-50%, -50%);
+                            width: 120px;
+                            height: 120px;
+                            background: var(--accent-color);
+                            border-radius: 50%;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                          "
+                        >
+                          <img src="src/foto-anggota/4.jpg" alt="Nama" style="width: 100%; height: 100%; object-fit: cover; border-radius: 50%;">
+                        </div>
+                      </div>
+                      <div class="team-info p-4 text-center">
+                        <h4
+                          style="
+                            color: var(--accent-color);
+                            margin-bottom: 8px;
+                            font-weight: 600;
+                          "
+                        >
+                          Jawi Arung Samudra
+                        </h4>
+                        <p
+                          style="
+                            color: #666;
+                            font-size: 14px;
+                            margin-bottom: 12px;
+                            font-weight: 500;
+                          "
+                        >
+                         Absen
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Team Member 5 -->
+                  <div class="col-lg-4 col-md-6">
+                    <div
+                      class="team-card h-100"
+                      style="
+                        background: white;
+                        border-radius: 12px;
+                        box-shadow: 0 4px 15px rgba(13, 56, 39, 0.1);
+                        transition: all 0.3s ease;
+                        overflow: hidden;
+                      "
+                    >
+                      <div
+                        class="team-image"
+                        style="
+                          height: 250px;
+                          background: linear-gradient(
+                            135deg,
+                            var(--light-accent),
+                            rgba(13, 56, 39, 0.05)
+                          );
+                          position: relative;
+                          overflow: hidden;
+                        "
+                      >
+                        <div
+                          style="
+                            position: absolute;
+                            top: 50%;
+                            left: 50%;
+                            transform: translate(-50%, -50%);
+                            width: 120px;
+                            height: 120px;
+                            background: var(--accent-color);
+                            border-radius: 50%;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                          "
+                        >
+                          <img src="src/foto-anggota/5.jpg" alt="Nama" style="width: 100%; height: 100%; object-fit: cover; border-radius: 50%;">
+                        </div>
+                      </div>
+                      <div class="team-info p-4 text-center">
+                        <h4
+                          style="
+                            color: var(--accent-color);
+                            margin-bottom: 8px;
+                            font-weight: 600;
+                          "
+                        >
+                          Revan Agus Widyantara
+                        </h4>
+                        <p
+                          style="
+                            color: #666;
+                            font-size: 14px;
+                            margin-bottom: 12px;
+                            font-weight: 500;
+                          "
+                        >
+                          Absen
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Team Member 6 -->
+                  <div class="col-lg-4 col-md-6">
+                    <div
+                      class="team-card h-100"
+                      style="
+                        background: white;
+                        border-radius: 12px;
+                        box-shadow: 0 4px 15px rgba(13, 56, 39, 0.1);
+                        transition: all 0.3s ease;
+                        overflow: hidden;
+                      "
+                    >
+                      <div
+                        class="team-image"
+                        style="
+                          height: 250px;
+                          background: linear-gradient(
+                            135deg,
+                            var(--light-accent),
+                            rgba(13, 56, 39, 0.05)
+                          );
+                          position: relative;
+                          overflow: hidden;
+                        "
+                      >
+                        <div
+                          style="
+                            position: absolute;
+                            top: 50%;
+                            left: 50%;
+                            transform: translate(-50%, -50%);
+                            width: 120px;
+                            height: 120px;
+                            background: var(--accent-color);
+                            border-radius: 50%;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                          "
+                        >
+                          <img src="src/foto-anggota/6.jpg" alt="Nama" style="width: 100%; height: 100%; object-fit: cover; border-radius: 50%;">
+                        </div>
+                      </div>
+                      <div class="team-info p-4 text-center">
+                        <h4
+                          style="
+                            color: var(--accent-color);
+                            margin-bottom: 8px;
+                            font-weight: 600;
+                          "
+                        >
+                          M Kysha Ramadhani
+                        </h4>
+                        <p
+                          style="
+                            color: #666;
+                            font-size: 14px;
+                            margin-bottom: 12px;
+                            font-weight: 500;
+                          "
+                        >
+                          Absen
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+            <style>
+              .team-card:hover {
+                transform: translateY(-8px);
+                box-shadow: 0 8px 25px rgba(13, 56, 39, 0.15) !important;
+              }
+
+              .social-links a:hover {
+                opacity: 0.7;
+                transform: translateY(-2px);
+              }
+
+              @media (max-width: 768px) {
+                .team-image {
+                  height: 200px !important;
+                }
+
+                .team-image div {
+                  width: 100px !important;
+                  height: 100px !important;
+                }
+
+                .team-image i {
+                  font-size: 36px !important;
+                }
+              }
+            </style>
+
+          <div class="row mt-5">
+            <div class="col-12 text-center mb-5">
+              <h2 class="section-title">Why Choose Sketdoor</h2>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-4">
+              <div class="feature-box">
+                <div class="feature-icon">
+                  <i class="fas fa-check-circle"></i>
+                </div>
+                <h4>Expert-Tested Products</h4>
+                <p>
+                  Every item in our inventory has been tested and approved by
+                  our team of experienced hikers and outdoor experts.
+                </p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="feature-box">
+                <div class="feature-icon">
+                  <i class="fas fa-shipping-fast"></i>
+                </div>
+                <h4>Fast &amp; Reliable Shipping</h4>
+                <p>
+                  We understand that you're eager to hit the trails, which is
+                  why we prioritize quick processing and delivery.
+                </p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="feature-box">
+                <div class="feature-icon">
+                  <i class="fas fa-headset"></i>
+                </div>
+                <h4>Expert Customer Support</h4>
+                <p>
+                  Our customer service team consists of outdoor enthusiasts who
+                  can provide knowledgeable advice on all our products.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Values Section -->
+      <section class="values-section">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6">
+              <h2 class="section-title">Our Values</h2>
+              <ul class="list-unstyled mt-4">
+                <li class="mb-3">
+                  <h5>
+                    <i class="fas fa-leaf me-2 text-success"></i> Environmental
+                    Responsibility
+                  </h5>
+                  <p>
+                    We prioritize partnerships with brands committed to
+                    sustainable manufacturing and eco-friendly practices.
+                  </p>
+                </li>
+                <li class="mb-3">
+                  <h5>
+                    <i class="fas fa-medal me-2 text-warning"></i> Quality
+                    Without Compromise
+                  </h5>
+                  <p>
+                    We never sacrifice quality for profit, ensuring that every
+                    product we sell meets our high standards.
+                  </p>
+                </li>
+                <li class="mb-3">
+                  <h5>
+                    <i class="fas fa-users me-2 text-primary"></i> Community
+                    Engagement
+                  </h5>
+                  <p>
+                    We actively participate in and support outdoor education
+                    programs and trail conservation efforts.
+                  </p>
+                </li>
+              </ul>
+            </div>
+            <div class="col-lg-6">
+              <div class="p-4 bg-white rounded shadow">
+                <blockquote class="blockquote">
+                  <p>
+                    "At Sketdoor, we believe that quality hiking equipment isn't
+                    just about enhancing your outdoor experience—it's about
+                    ensuring your safety, comfort, and connection with the
+                    natural world. Every product we offer is a reflection of our
+                    commitment to these principles."
+                  </p>
+                  <footer class="blockquote-footer">
+                    Sarah Johnson,
+                    <cite title="Source Title">Founder &amp; CEO</cite>
+                  </footer>
+                </blockquote>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sketdoor</title>
+    <link rel="icon" href="../src/icon/icon-bg.png" />
+    <link rel="stylesheet" href="../css/global.css" />
+    <link rel="stylesheet" href="../css/detail.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <script src="../js/pageLayout.js" defer></script>
+    <script src="../src/data/product.js"></script>
+    <script>
+      const productName = "Buckle Hook";
+      // Find the product data based on the name
+      const productData = products.find(p => p.name === productName);
+    </script>
+
+    <main>
+      <div class="container product-container mt-5 mb-5">
+        <div class="row">
+          <!-- Product Image Section -->
+          <div class="col-md-6">
+            <div class="product-image-container">
+              <img id="productImage" src="../src/img/product/product1.webp" alt="Outdoor Hiking Backpack" class="img-fluid rounded shadow product-main-image">
+              <div class="new-badge" id="newBadge">NEW</div>
+            </div>
+          </div>
+          
+          <!-- Product Details Section -->
+          <div class="col-md-6">
+            <div class="product-info">
+              <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                  <li class="breadcrumb-item"><a href="../index.html">Home</a></li>
+                  <li class="breadcrumb-item"><a href="../products.html?category=Backpack" id="breadcrumbProductCategory">Backpack</a></li>
+                  <li class="breadcrumb-item active" aria-current="page" id="breadcrumbProductName">Outdoor Hiking Backpack</li>
+                </ol>
+              </nav>
+              
+              <h1 class="product-title mb-3" id="productName">...</h1>
+              
+              <div class="product-meta mb-4">
+                <span class="product-category badge bg-light text-dark me-2" id="productCategory">...</span>
+                <span class="product-id d-none" id="productId">1</span>
+              </div>
+              
+              <div class="product-price mb-4">
+                <h2 class="price-tag" id="productPrice">Rp...</h2>
+              </div>
+
+              <div class="product-stock mb-4">
+                <h2 class="stock-tag" id="productStock" style="font-size: 20px !important;">Stock : 10</h2>
+              </div>
+              
+              <div class="product-description mb-4">
+                <h3>Description</h3>
+                <p id="productDescription">...</p>
+              </div>
+              
+              <div class="product-actions">
+                <div class="quantity-selector mb-3">
+                  <label for="quantity" class="form-label">Quantity:</label>
+                  <div class="input-group" style="max-width: 150px;">
+                    <button class="btn btn-outline-secondary" type="button" id="decrease">-</button>
+                    <input type="number" class="form-control text-center" id="quantity" value="1" min="1" onblur="checkQuantity()">
+                    <button class="btn btn-outline-secondary" type="button" id="increase">+</button>
+                  </div>
+                </div>
+                
+                <div class="d-grid gap-2">
+                  <button class="btn btn-primary" id="addToCart">
+                    <i class="fas fa-shopping-cart me-2"></i> Add to Cart
+                  </button> 
+                </div>
+              </div>
+              
+              <div class="shop-link mt-2">
+                <a href="https://www.tokopedia.com/aonijieid/aonijie-c9111-outdoor-hiking-backpack-30l-tas-punggung-olahraga-blue-c4d60" target="_blank" class="btn btn-success w-100" id="shopLink">
+                  <i class="fas fa-store me-2"></i> Buy Now
+                </a>
+              </div>
+              
+              <div class="product-release mt-4">
+                <p class="text-muted small">
+                  <i class="far fa-calendar-alt me-1"></i> ...
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Related Products Section -->
+        <div class="related-products mt-5">
+          <h3 class="section-title mb-4" style="display: flex; justify-content: space-between; align-items: end;">You Might Also Like <button class="btn btn-link" style="color: #0D3827; text-decoration: none;" onclick="location.href='../2-Moch Akbar Irfansyah/product.html'">More Item</button></h3>
+          <div class="row row-cols-1 row-cols-md-4 g-4" id="relatedProducts">
+            <!-- Related products would be dynamically added here -->
+            <script>
+              // Get 4 random products from the array and display them
+              const randomProducts = [];
+              while (randomProducts.length < 4) {
+                const randomIndex = Math.floor(Math.random() * products.length);
+                const product = products[randomIndex];
+                if (!randomProducts.includes(product)) {
+                  randomProducts.push(product);
+                }
+              }
+              const relatedProductsContainer = document.getElementById('relatedProducts');
+              randomProducts.forEach((product) => {
+                const productCard = document.createElement('div');
+                productCard.className = 'col';
+                productCard.innerHTML = `
+                  <div class="card h-100 product-card">
+                    <div class="card-img-top-container">
+                      <img src="../${product.image}" class="card-img-top" alt="${product.name}">
+                    </div>
+                    <div class="card-body">
+                      <h5 class="card-title">${product.name}</h5>
+                      <p class="card-text price">Rp ${product.price.toLocaleString('id-ID', { minimumFractionDigits: 2 })}</p>
+                      <button class="btn btn-sm btn-outline-primary" onclick="window.location.href='../${product.detail}'">View Details</button>
+                    </div>
+                  </div>
+                `;
+                relatedProductsContainer.appendChild(productCard);
+              });
+            </script>
+          </div>
+        </div>
+      </div>
+      
+      <script>
+        const formatPrice = (price) => {
+          return "Rp " + price.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".") + ",00";
+        };
+        
+        // Format the date nicely for display
+        const formatReleaseDate = (date) => {
+          const options = { year: 'numeric', month: 'long', day: 'numeric' };
+          return new Date(date).toLocaleDateString('en-US', options);
+        };
+        
+        // Setup quantity buttons
+        const quantityInput = document.getElementById('quantity');
+        const increaseBtn = document.getElementById('increase');
+        const decreaseBtn = document.getElementById('decrease');
+        
+        increaseBtn.addEventListener('click', () => {
+          if(parseInt(quantityInput.value) < productData.stock) {
+            quantityInput.value = parseInt(quantityInput.value) + 1;
+          } else {
+            alert('Cannot exceed available stock');
+          }
+        });
+        
+        decreaseBtn.addEventListener('click', () => {
+          if (parseInt(quantityInput.value) > 1) {
+            quantityInput.value = parseInt(quantityInput.value) - 1;
+          }
+        });
+
+        const checkQuantity = () => {
+          if (parseInt(quantityInput.value) > productData.stock) {
+            quantityInput.value = productData.stock;
+          }
+        };
+        
+        // Cart functionality with localStorage
+        const cartManager = {
+          // Get cart from localStorage
+          getCart: function() {
+            const cart = localStorage.getItem('hikeGearCart');
+            return cart ? JSON.parse(cart) : [];
+          },
+          
+          // Save cart to localStorage
+          saveCart: function(cart) {
+            localStorage.setItem('hikeGearCart', JSON.stringify(cart));
+          },
+          
+          // Add item to cart
+          addToCart: function(product, quantity) {
+            const cart = this.getCart();
+            
+            // Check if product already in cart
+            const existingProductIndex = cart.findIndex(item => item.id === product.id);
+            
+            if (existingProductIndex > -1) {
+              // Update quantity if product already in cart
+              cart[existingProductIndex].quantity += quantity;
+            } else {
+              // Add new item to cart
+              cart.push({
+                id: product.id,
+                name: product.name,
+                price: product.price,
+                image: product.image,
+                link: product.link,
+                category: product.category,
+                quantity: quantity
+              });
+            }
+            
+            // Save updated cart
+            this.saveCart(cart);
+            
+            // Return updated cart total count
+            return this.getCartCount();
+          },
+          
+          // Get total number of items in cart
+          getCartCount: function() {
+            const cart = this.getCart();
+            return cart.reduce((total, item) => total + item.quantity, 0);
+          }
+        };
+
+        // Function to update product data in the UI
+        function updateProductUI() {
+          // Update product details in the UI
+          document.getElementById('productName').textContent = productData.name;
+          document.getElementById('breadcrumbProductName').textContent = productData.name;
+          document.getElementById('productCategory').textContent = productData.category;
+          document.getElementById('productId').textContent = productData.id;
+          document.getElementById('productPrice').textContent = formatPrice(productData.price);
+          if (productData.stock > 0) {
+            document.getElementById('productStock').textContent = "Stock : " + productData.stock;
+            document.getElementById('addToCart').disabled = false;
+              // Update shop link
+          const shopLink = document.getElementById('shopLink');
+          if (shopLink && productData.link) {
+            shopLink.href = productData.link;
+          }
+          } else {
+            document.getElementById('addToCart').disabled = true;
+            document.getElementById('increase').disabled = true;
+            document.getElementById('decrease').disabled = true;
+            document.getElementById('shopLink').setAttribute('href', '#');
+             document.getElementById('shopLink').setAttribute('target', '');
+            document.getElementById('productStock').innerHTML = '<span class="badge bg-danger">Out of Stock</span>';
+          }
+          document.getElementById('breadcrumbProductCategory').textContent = productData.category;
+          document.getElementById('productDescription').textContent = productData.description;
+          document.getElementById('breadcrumbProductCategory').setAttribute('href', `../4-Jawi Arung Samudra/category.html?category=${productData.category}`);
+          
+          // Update product image
+          const productImage = document.getElementById('productImage');
+          if (productImage && productData.image) {
+            productImage.src = `../${productData.image}`;
+            productImage.alt = productData.name;
+          }
+          
+          // Update release date
+          document.querySelector('.product-release .text-muted').innerHTML = 
+            `<i class="far fa-calendar-alt me-1"></i> Released: ${formatReleaseDate(productData.date)}`;
+          
+          // Show/hide new badge
+          const newBadge = document.getElementById('newBadge');
+          if (newBadge) {
+            newBadge.style.display = productData.isNew ? 'block' : 'none';
+          }
+        }
+        
+        // Update cart counter in the UI
+        function updateCartCounter() {
+          const cartCounter = document.querySelector('.cart-counter');
+          if (cartCounter) {
+            const count = cartManager.getCartCount();
+            cartCounter.textContent = count;
+            cartCounter.style.display = count > 0 ? 'block' : 'none';
+          }
+        }
+        
+        // Add to cart functionality
+        const addToCartBtn = document.getElementById('addToCart');
+        addToCartBtn.addEventListener('click', () => {
+          const quantity = parseInt(document.getElementById('quantity').value);
+          
+          // Add to cart
+          cartManager.addToCart(productData, quantity);
+          // Update UI
+          updateCartCounter();
+          
+          // Show confirmation
+          const confirmationDiv = document.createElement('div');
+          confirmationDiv.className = 'alert alert-success alert-dismissible fade show mt-3';
+          confirmationDiv.innerHTML = `
+            <strong>Success!</strong> Added ${quantity} ${productData.name}(s) to your cart.
+            <a href="../1-Dzaidan Rizky Alifian Akbar/cart.html" class="alert-link">View Cart</a>
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+          `;
+          
+          // Add confirmation message below add to cart button
+          const productActions = document.querySelector('.product-actions');
+          productActions.appendChild(confirmationDiv);
+          
+          // Auto remove after 5 seconds
+          setTimeout(() => {
+            confirmationDiv.remove();
+          }, 5000);
+        });
+        
+        // Initialize UI when DOM content is loaded
+        document.addEventListener('DOMContentLoaded', () => {
+          // Update product UI with data
+          updateProductUI();
+          
+          // Initialize cart counter
+          updateCartCounter();
+        });
+      </script>
+    </main>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
